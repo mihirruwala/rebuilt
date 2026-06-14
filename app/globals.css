@@ -1,0 +1,15 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#080808;--off:#111;--g1:#1a1a1a;--g2:#2a2a2a;--g3:#888;--g4:#ccc;
+  --white:#f4f2ee;--red:#c0392b;--red2:#e74c3c;--amber:#d4a847;--green:#4caf7d;
+}
+html,body{height:100%;background:var(--black);color:var(--white);font-family:'DM Mono',monospace;font-size:14px;line-height:1.7;overflow:hidden}
+.serif{font-family:'DM Serif Display',serif}
+input[type=text],input[type=date],input[type=email],textarea,select{
+  width:100%;background:var(--g1);border:1px solid var(--g2);color:var(--white);
+  padding:14px 16px;font-family:'DM Mono',monospace;font-size:14px;outline:none;
+  border-radius:3px;transition:border-color .2s;
+}
+input:focus,textarea:focus,select:focus{border-color:var(--g3)}
+textarea{resize:none;height:100px}
+button{cursor:pointer}
